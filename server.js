@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 
 // DataBase Connection
-mongoose.connect('mongodb://localhost/blog')
+mongoose.connect('mongodb+srv://yousef:You!@#sef123@cluster0.lt539.mongodb.net/blog?retryWrites=true&w=majority')
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
