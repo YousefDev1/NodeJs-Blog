@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pro/css/pro.css">
+    <link rel="stylesheet" href="/css/add.css">
+    <title>Add Article</title>
+</head>
+<body>
+    <div class="container flex justify-center align-center">
+        <div class="content">
+            <div class="title">
+                <%= title %> 
+            </div>
+            <form action="/add" class="form" method="post">
+                <div class="form-row">
+                    <input type="text" class="form-box" name="title" placeholder="Title">
+                    <input type="text" class="form-box" name="author" placeholder="Author">
+                </div>
+                <div class="form-row">
+                    <textarea name="body" cols="30" rows="10" class="form-box" placeholder="Body"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Post
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
